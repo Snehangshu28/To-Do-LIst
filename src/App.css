@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   min-height: 100vh;
+  background: linear-gradient(to right,rgb(44 154 173) ,rgb(119, 62, 144) );
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.container{
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    box-shadow: 1px 1px 4px black;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.add-btn{
+  text-align: center;
+  display: flex;
+  height: 20%;
+  width: 100%;
+  border: none;
+  border-radius: 50%;
+  margin-top: 3%;
+}
+.npt{
+  border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+    padding: 8px 15px;
+    color: black;
+}
+.npt:hover{
+  border-color: #ccc;
+}
+.npt:focus{
+  border-color: #9900ff;
+
+}
+.main{
+  display: flex;
+  flex-direction: column;}
+
+.btn-add {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  margin-top: 4%;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-add:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-add:focus {
+  outline: none;
+}
+
+.btn-add.color {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+ol{
+  list-style: none;
 }

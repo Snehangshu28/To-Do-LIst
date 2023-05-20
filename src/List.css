@@ -1,0 +1,20 @@
+.list-item{
+    display: flex ;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.list-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 39, 137);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    height: 26px;
+    width: 26px;
+}
+.list-btn:hover{
+    background-color: red;
+}
